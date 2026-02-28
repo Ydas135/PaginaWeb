@@ -3,24 +3,224 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="./dist/output.css">
     <title>Document</title>
 </head>
-<body class="p-8">
-    <header>
-        <nav class="flex justify-between items-center py-4">
-            <a class="p-4 rounded-3xl inline-flex items-center justify-center">
-            <img src="./assets/icono.svg" class="w-32 h-auto">
+<body class="p-8 bg-white">
+    <header class="bg-gradient-to-r from-slate-900 to-slate-800 text-white rounded-2xl mx-6 mt-6 overflow-hidden">
+        <nav class="flex justify-between items-center py-6 px-8 bg-white rounded-t-2xl text-black">
+            <a>
+                <img src="./assets/icono.svg" class="w-28">
             </a>
-
             <ul class="hidden md:flex items-center gap-8">
-                <li><a href="#" class="hover:text-purple-400">Home</a></li>
-                <li><a href="#" class="hover:text-purple-400">Special Offers</a></li>
-                <li><a href="#" class="hover:text-purple-400 bg-orange-500 text-white rounded-3xl px-4 py-2">Restaurants</a></li>
-                <li><a href="#" class="hover:text-purple-400">Track Order</a></li>
-                <li><a href="#" class="hover:text-purple-400 bg-black text-white px-5 py-2 rounded-full">Login/SignUp</a></li>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Special Offers</a></li>
+                <li>
+                    <a class="bg-orange-500 text-white px-4 py-2 rounded-full">
+                    Restaurants
+                    </a>
+                </li>
+                    <li><a href="#">Track Order</a></li>
+                <li>
+                    <a class="bg-black px-5 py-2 rounded-full text-white">
+                    Login/SignUp
+                    </a>
+                </li>
             </ul>
         </nav>
+
+        <section class="flex flex-col md:flex-row items-center justify-between px-10 pb-16 pt-6 gap-10">
+            <div class="max-w-2xl">
+                <p class="text-sm opacity-70 mb-3">I'm lovin' it!</p>
+
+                <h1 class="text-4xl md:text-6xl font-bold mb-6 leading-tight">
+                McDonald's East London
+                </h1>
+
+                <div class="flex flex-wrap gap-4 mb-8 mt-12">
+                    <span class="border border-white px-6 py-2 rounded-full text-sm">
+                    Minimum Order: 12 GBP
+                    </span>
+
+                    <span class="border border-white px-6 py-2 rounded-full text-sm">
+                    Delivery in 20–25 Minutes
+                    </span>
+                </div>
+
+                <button class="bg-orange-500 px-8 py-3 rounded-xl font-semibold shadow-md">
+                Open until 3:00 AM
+                </button>
+            </div>
+
+            <div class="relative">
+                <div class="w-[420px] h-[300px] bg-white/10 rounded-2xl flex items-center justify-center">
+                    <img src="./assets/hamburguesa.svg" alt="Hamburguesa">
+                </div>
+
+                <div class="absolute -left-8 bottom-6 bg-white text-black p-4 rounded-xl shadow-xl w-32">
+                    <p class="text-3xl font-bold">3.4</p>
+                    <p class="text-yellow-500 text-sm">★★★★★</p>
+                    <p class="text-xs text-gray-500">1,360 reviews</p>
+                </div>
+            </div>
+
+        </section>
+
     </header>
+
+    <main class="bg-gray-100 px-10 py-16">
+
+        <div class="flex justify-between items-center mb-10">
+            <h2 class="text-3xl font-bold">
+                All Offers from McDonald's East London
+            </h2>
+
+            <input 
+                type="text"
+                placeholder="Search from menu..."
+                class="border border-gray-300 px-5 py-3 rounded-full w-72 outline-none"
+            />
+        </div>
+
+        <div class="bg-orange-500 rounded-xl px-6 py-4 flex gap-6 text-white font-medium mb-16">
+            <button class="bg-black px-5 py-2 rounded-full">Offers</button>
+            <button>Burgers</button>
+            <button>Fries</button>
+            <button>Snacks</button>
+            <button>Salads</button>
+            <button>Cold drinks</button>
+            <button>Happy Meal®</button>
+            <button>Desserts</button>
+            <button>Hot drinks</button>
+            <button>Sauces</button>
+            <button>Orbit®</button>
+        </div>
+
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mb-16">
+            <div class="relative rounded-2xl overflow-hidden group cursor-pointer">
+                <img src="./assets/primeracard.svg" 
+                class="w-full h-64 object-cover group-hover:scale-105 transition duration-500">
+                <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent"></div>
+                <div class="absolute top-4 right-4 bg-slate-900 text-white px-4 py-2 rounded-lg text-sm font-semibold">
+                -20%
+                </div>
+
+                <div class="absolute bottom-6 left-6 text-white">
+                    <p class="text-sm text-orange-400">
+                    McDonald's East London
+                    </p>
+                    <h3 class="text-2xl font-bold">
+                    First Order Discount
+                    </h3>
+                </div>
+
+            </div>
+
+                <div class="relative rounded-2xl overflow-hidden group cursor-pointer">
+                <img src="./assets/segundacard.svg" 
+                class="w-full h-64 object-cover group-hover:scale-105 transition duration-500">
+                <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent"></div>
+                <div class="absolute top-4 right-4 bg-slate-900 text-white px-4 py-2 rounded-lg text-sm font-semibold">
+                -20%
+                </div>
+
+                <div class="absolute bottom-6 left-6 text-white">
+                    <p class="text-sm text-orange-400">
+                    McDonald's East London
+                    </p>
+                    <h3 class="text-2xl font-bold">
+                    Vegan Discount
+                    </h3>
+                </div>
+            </div>
+
+            <div class="relative rounded-2xl overflow-hidden group cursor-pointer">
+                <img src="./assets/terceracard.svg" 
+                class="w-full h-64 object-cover group-hover:scale-105 transition duration-500">
+                <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent"></div>
+                <div class="absolute top-4 right-4 bg-slate-900 text-white px-4 py-2 rounded-lg text-sm font-semibold">
+                    -100%
+                </div>
+
+            <div class="absolute bottom-6 left-6 text-white">
+                <p class="text-sm text-orange-400">
+                McDonald's East London
+                </p>
+                <h3 class="text-2xl font-bold">
+                Free ice Cream Offer
+                </h3>
+            </div>
+
+        </div>
+
+    </div>
+
+    <h3 class="text-3xl font-bold mb-10">Burgers</h3>
+
+    <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div class="bg-white rounded-2xl shadow-lg p-6 flex justify-between items-center relative hover:shadow-xl transition">
+            <div class="max-w-[60%]">
+                <h4 class="text-lg font-semibold">
+                Royal Cheese Burger with extra Fries
+                </h4>
+                <p class="text-sm text-gray-500 mt-2">
+                1 McChicken™, 1 Big Mac™, 1 Royal Cheeseburger, 3 medium sized French Fries, 3 cold drinks
+                </p>
+
+                <p class="font-bold mt-4">
+                GBP 23.10
+                </p>
+            </div>
+
+        <div class="relative">
+            <img src="./assets/cardhamburguesa.svg" class="w-36 rounded-xl">
+            <button class="absolute -bottom-4 -right-4 bg-black text-white w-12 h-12 rounded-full text-2xl">
+        +   </button>
+        </div>
+    </div>
+
+    <div class="bg-white rounded-2xl shadow-lg p-6 flex justify-between items-center relative hover:shadow-xl transition">
+        <div class="max-w-[60%]">
+            <h4 class="text-lg font-semibold">
+            The classics for 3
+            </h4>
+            <p class="text-sm text-gray-500 mt-2">
+            1 McChicken™, 1 Big Mac™, 1 Royal Cheeseburger, 3 medium sized French Fries, 3 cold drinks
+            </p>
+            <p class="font-bold mt-4">
+                GBP 23.10
+            </p>
+        </div>
+
+        <div class="relative">
+            <img src="./assets/cardhamburguesa.svg" class="w-36 rounded-xl">
+            <button class="absolute -bottom-4 -right-4 bg-black text-white  w-12 h-12 rounded-full text-2xl">
+            </button>
+        </div>
+
+    </div>
+
+    <div class="bg-white rounded-2xl shadow-lg p-6 flex justify-between items-center relative hover:shadow-xl transition">
+        <div class="max-w-[60%]">
+            <h4 class="text-lg font-semibold">
+            The classics for 3
+            </h4>
+            <p class="text-sm text-gray-500 mt-2">
+            1 McChicken™, 1 Big Mac™, 1 Royal Cheeseburger, 3 medium sized French Fries, 3 cold drinks
+            </p>
+
+            <p class="font-bold mt-4">
+            GBP 23.10
+            </p>
+        </div>
+
+                <div class="relative">
+                    <img src="./assets/cardhamburguesa.svg" class="w-36 rounded-xl">
+                    <button class="absolute -bottom-4 -right-4 bg-black text-white w-12 h-12 rounded-full text-2xl">
+        +           </button>
+                </div>
+            </div>
+        </div>
+    </main>
 </body>
 </html>
