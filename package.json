@@ -1,0 +1,16 @@
+{
+  "name": "food-delivery-website",
+  "version": "1.0.0",
+  "description": "",
+  "license": "ISC",
+  "author": "",
+  "type": "commonjs",
+  "main": "tailwind.config.js",
+  "scripts": {
+    "build:styles": "tailwindcss -i ./input.css -o ./dist/output.css --watch"
+  },
+  "devDependencies": {
+    "@tailwindcss/cli": "^4.2.1",
+    "tailwindcss": "^4.2.1"
+  }
+}
